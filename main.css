@@ -105,3 +105,20 @@ header {
 /* Phase 2 */
 
 /* Your code here */
+@media print {
+    header,
+    .sidebar,
+    .image-box {
+	display: none;
+    }
+
+    .story-box {
+	background-color: #fff;
+	border-radius: 0;
+	filter: none;
+    }
+       /* padding: 0 2rem; */
+    /* border-radius: 0 45px; */
+    /* background-color: #6C547B; */
+    /* filter: drop-shadow(4px 4px 4px black); */
+}
