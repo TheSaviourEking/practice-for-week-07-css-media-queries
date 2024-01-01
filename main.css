@@ -107,8 +107,7 @@ header {
 /* Your code here */
 @media print {
     header,
-    .sidebar,
-    .image-box {
+    .sidebar {
 	display: none;
     }
 
@@ -117,8 +116,23 @@ header {
 	border-radius: 0;
 	filter: none;
     }
-       /* padding: 0 2rem; */
-    /* border-radius: 0 45px; */
-    /* background-color: #6C547B; */
-    /* filter: drop-shadow(4px 4px 4px black); */
+    .page {
+	position: relative;
+    }
+    .image-box {
+	width: 6rem;
+	position: absolute;
+    }
+}
+@media print and (orientation: portrait) {
+    .image-box {
+	right: 4rem;
+	top: 3rem;
+    }
+}
+@media print and (orientation: landscape) {
+    .image-box {
+	right: 3rem;
+	top: 3rem;
+    }
 }
